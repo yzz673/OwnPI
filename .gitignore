@@ -1,0 +1,16 @@
+.DS_Store
+
+# Local build and validation output.
+dist/
+tmp/
+tests/
+*.log
+__pycache__/
+*.py[cod]
+
+# Never store credentials in the distribution repository.
+.env
+*.key
+*.pem
+*_token*
+*_secret*

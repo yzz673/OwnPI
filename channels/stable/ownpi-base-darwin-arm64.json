@@ -1,0 +1,63 @@
+{
+  "schema_version": 2,
+  "kind": "ownpi-base",
+  "version": "0.1.0",
+  "channel": "stable",
+  "target": "darwin-arm64",
+  "artifact": "https://github.com/yzz673/OwnPI/releases/download/v0.1.0/ownpi-base-0.1.0-darwin-arm64.tar.gz",
+  "checksum": "f4f155949207408d57893e630e13c5e6b406f8ad89b63e7ca27470405a554ac4",
+  "components": [
+    {
+      "component_id": "core",
+      "version": "0.1.0",
+      "path": "components/core",
+      "requirement": "ownpi==0.1.0",
+      "wheelhouse": "components/core/wheels",
+      "python_dependencies": [
+        "pyyaml>=6.0.1",
+        "prompt_toolkit>=3.0.43",
+        "pypdf>=6.0.0",
+        "rich>=13.7.1",
+        "bashlex>=0.18",
+        "httpx[socks]>=0.28.1",
+        "websockets>=15.0.1",
+        "beautifulsoup4>=4.13.4",
+        "nbformat>=5.10.4",
+        "pillow>=11.2.1",
+        "mutagen>=1.47.0",
+        "zstandard>=0.23.0",
+        "gdown>=5.2.0",
+        "jsonschema>=4.23.0",
+        "packaging>=24.0"
+      ],
+      "capabilities": [
+        "ownpi-runtime"
+      ],
+      "digest": "7fb6d9e1eb83ae7dd9bd4eed45ce8aa5bc1156e9ec98298506b9cfd7b7644703"
+    },
+    {
+      "component_id": "dependency-bundle",
+      "version": "1.0.0",
+      "path": "components/dependency-bundle",
+      "requirement": "",
+      "wheelhouse": "components/dependency-bundle/wheels",
+      "python_dependencies": [
+        "matplotlib>=3.8",
+        "numpy>=1.24.0",
+        "pdf2image>=1.17.0",
+        "pymupdf>=1.27.0",
+        "python-pptx>=1.0.2"
+      ],
+      "capabilities": [
+        "latex-pdf-build",
+        "document-rendering"
+      ],
+      "digest": "5f77a03aee9ae454f1717dfb9db09dacf850e15e1b456237c5597d9838b3ffd9"
+    }
+  ],
+  "python_runtime": {
+    "version": "3.12.14",
+    "path": "runtime/python",
+    "executable": "bin/python3"
+  }
+}

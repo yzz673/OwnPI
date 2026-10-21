@@ -1,0 +1,26 @@
+{
+  "schema_version": 2,
+  "kind": "ownpi-neuroscience-pack",
+  "version": "0.1.0",
+  "channel": "stable",
+  "target": "linux-x86_64",
+  "artifact": "https://github.com/yzz673/OwnPI/releases/download/v0.1.0/ownpi-neuroscience-pack-0.1.0-linux-x86_64.tar.gz",
+  "checksum": "7d4e053b8a9af9965862baf8dd7aa36145a8fa8be45f0f72407eb1fd6a8ba8e5",
+  "components": [
+    {
+      "component_id": "neuroscience",
+      "version": "0.1.0",
+      "path": "pack",
+      "requirement": "",
+      "wheelhouse": "pack/wheels",
+      "python_dependencies": [],
+      "capabilities": [
+        "neuroscience-skills",
+        "brainlib",
+        "external-knowledge"
+      ],
+      "digest": "7656ea2e345fb3cb086b8d323dcdbc62500ea7e63e9ba7de9772507c1f216613"
+    }
+  ],
+  "python_runtime": null
+}

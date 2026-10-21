@@ -211,6 +211,12 @@ Stable 版本将与可安装产品一同发布 OwnPI 源码。
 - [故障排查](docs/troubleshooting.zh-CN.md)：安装、模型访问和任务恢复。
 - [第三方声明](THIRD_PARTY_NOTICES.md)。
 
+## 使用许可
+
+OwnPI Beta 采用 [OwnPI Beta Evaluation License](LICENSE)，允许安装和研究试用。
+OwnPI 自有产品组件的再分发、出售和改作需要另行授权；第三方组件继续适用各自许可。
+详见[使用许可说明](docs/licensing.md)。
+
 ## 反馈
 
 Beta 以可安装产品而非源码版本发布。请通过 [GitHub Issues](https://github.com/yzz673/OwnPI/issues) 报告安装问题、provider 故障、运行中断、意外产出或文档问题，并附上 OwnPI 版本、操作系统、命令、相关 run 状态和复现步骤。不要提供 API key、私有数据或敏感工作区内容。

@@ -217,6 +217,13 @@ The Stable release will publish the OwnPI source code together with the installa
 - [Troubleshooting](docs/troubleshooting.md): installation, model access, and task recovery.
 - [Third-Party Notices](THIRD_PARTY_NOTICES.md).
 
+## License
+
+OwnPI Beta is available under the [OwnPI Beta Evaluation License](LICENSE).
+Installation and research evaluation are permitted; redistribution, sale and
+modification of OwnPI-owned product components require separate permission.
+Third-party components retain their own licenses. See [usage and licensing](docs/licensing.md).
+
 ## Feedback
 
 The Beta is distributed as an installable product rather than a source release. Please use [GitHub Issues](https://github.com/yzz673/OwnPI/issues) to report installation problems, provider failures, runtime interruptions, unexpected outputs, or documentation issues.

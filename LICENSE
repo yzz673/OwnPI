@@ -1,0 +1,55 @@
+OwnPI Beta Evaluation License
+Version 1.0 — 2026-10-21
+
+Copyright (c) 2026 OwnPI contributors.
+
+1. Scope
+
+This license covers the OwnPI-authored materials in this distribution repository
+and the OwnPI-owned components of Beta packages distributed through its official
+releases. Third-party software, data, papers, models and other materials remain
+subject to their own licenses. This license does not replace or restrict rights
+granted by those licenses or rights that cannot be restricted by applicable law.
+
+2. Permission to evaluate
+
+You may download, install and run the OwnPI Beta for research and evaluation,
+including evaluation within your organization, and make private backup copies.
+Keep this license and applicable third-party notices with those copies.
+
+This license does not claim ownership of your inputs or research outputs. You
+may use and publish your research outputs, subject to any applicable third-party
+rights and your responsibility to review their accuracy and provenance.
+
+3. Rights reserved
+
+This is an evaluation license, not an open-source license. It does not grant
+permission to redistribute, sublicense or sell the OwnPI product, or to modify
+or create derivative versions of OwnPI-owned product components. Those activities
+require separate written permission from the relevant copyright holders.
+
+You may view and fork this public repository and modify its public documentation
+and installer to prepare contributions to the project. This collaboration
+permission does not authorize redistribution or modification of the OwnPI product
+packages. Third-party components retain their separate license permissions.
+
+No trademark rights or rights to unpublished source code are granted. Any future
+Stable release will state its own applicable license; this license does not
+promise a release date or grant rights under a future license.
+
+4. Beta status and responsibility
+
+The Beta is experimental and may fail or change. It can execute commands, access
+files and contact model providers. You are responsible for your workspace,
+credentials, provider charges, data permissions and review of research results.
+
+5. Disclaimer
+
+THE MATERIALS ARE PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+NONINFRINGEMENT. TO THE EXTENT PERMITTED BY LAW, THE COPYRIGHT HOLDERS AND
+CONTRIBUTORS ARE NOT LIABLE FOR CLAIMS, DAMAGES OR OTHER LIABILITY ARISING FROM
+THE MATERIALS OR THEIR USE.
+
+For permission requests, open a GitHub Issue without including confidential
+information: https://github.com/yzz673/OwnPI/issues.

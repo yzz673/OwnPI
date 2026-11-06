@@ -185,7 +185,7 @@ ownpi run resume <run_id> --background
 
 ### TUI
 
-Stable 版本将加入 OwnPI TUI，用于定义研究任务、启动 run 并查看分阶段进度。当前 Beta 通过 CLI 操作。
+统一的 Stable Base 同时包含 `ownpi`（CLI）和 `ownpi-tui`（终端界面），共用配置、凭据和运行记录。执行一次 `ownpi setup` 后即可用 `ownpi-tui` 启动。当前已发布 Beta 在 Stable 发布前仍为 CLI-only；发布后默认 Beta 安装可用 `ownpi update` 原地升级，无需卸载或清空数据。工作区和恢复参数见 [终端界面](docs/user/tui.zh-CN.md)。
 
 [![Stable 版本计划提供的 OwnPI TUI 预览](docs/assets/readme/terminal-demo-0-5s.gif)](https://galaxy-dawn.github.io/neuroagent-website/?lang=zh#heroTerminalDemo)
 

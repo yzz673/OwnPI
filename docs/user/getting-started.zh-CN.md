@@ -35,6 +35,8 @@ Setup 还会在适用时询问 reasoning effort 和 review profile。初次使�
 Beta 通过 CLI 运行科研任务，使用无人值守的 `full_access` 执行。
 请使用不含敏感文件的专用工作区。当前 Beta 不提供 TUI 或交互式权限审批。
 
+统一的 Stable Base 会在 CLI 之外提供 `ownpi-tui`，共用 APP home 和 setup 配置。Stable 发布后，默认 Beta 安装直接执行 `ownpi update` 即可升级，无需卸载或重置数据。启动、恢复和自定义安装路径见 [终端界面](tui.zh-CN.md)。
+
 ## 可选 Neuroscience Pack
 
 ```bash

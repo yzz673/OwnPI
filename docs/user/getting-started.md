@@ -33,6 +33,11 @@ Setup also asks for reasoning effort where applicable and a review profile. Keep
 
 The Beta runs the Research Level workflow through the CLI with unattended full access. Use a dedicated workspace without sensitive files. TUI and interactive permission approval are not part of the supported Beta workflow.
 
+The unified Stable Base adds `ownpi-tui` alongside the CLI, using the same APP
+home and setup. Once Stable is published, default Beta installations can run
+`ownpi update` directly; no uninstall or data reset is needed. See
+[Terminal UI](tui.md) for launch, resume and custom installation paths.
+
 ## Optional Neuroscience Pack
 
 ```bash

@@ -191,7 +191,11 @@ The following capabilities are planned for the Stable release and are not part o
 
 ### TUI
 
-The Stable release will add the OwnPI TUI for defining research tasks, starting runs, and inspecting staged progress. The current Beta is operated through the CLI documented above.
+The unified Stable Base includes both `ownpi` (CLI) and `ownpi-tui` (terminal UI),
+sharing configuration, credentials and runs. After `ownpi setup`, run `ownpi-tui`.
+The currently published Beta remains CLI-only until Stable is published. Default
+Beta installations then upgrade with `ownpi update`, without uninstalling or
+clearing data. See [Terminal UI](docs/user/tui.md) for workspace and resume options.
 
 [![Preview of the OwnPI TUI planned for the Stable release](docs/assets/readme/terminal-demo-0-5s.gif)](https://galaxy-dawn.github.io/neuroagent-website/?lang=en#heroTerminalDemo)
 

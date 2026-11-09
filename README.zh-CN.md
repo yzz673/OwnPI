@@ -160,24 +160,24 @@ ownpi run resume <run_id> --background
 
 ## 产出示例
 
-这篇 32 页论文 *Acoustic and sentence-associated information differ in their temporal support and sensor recurrence in non-invasive recordings* 是 OwnPI 在研究运行期间**未经过任何人工干预**产出的一个端到端研究示例。它研究哪些语音描述能够预测非侵入式脑记录、这些关联在哪些时间范围内提供额外预测，以及传感器上的模式能否跨故事和记录时段重复出现。论文使用 23 名参与者的 164 份 MEG 记录，比较声学特征、音素身份、孤立词表征、上下文表征和词惊奇度；通过留出故事测试、竞争预测变量、时间控制、预处理比较和直接预测检验，界定结果能够支持的结论。
+这篇 42 页论文 *Non-invasive brain recordings retain acoustic and linguistic information with distinct temporal and sensor profiles* 是 OwnPI 自主科研产出的一个端到端研究示例。它研究哪些声学和语言描述能够预测非侵入式脑响应，以及相关信息如何在时间和传感器维度上表现出来。研究发现，非侵入式脑记录保留了声学、语音形式、词汇和上下文等多个层面的信息，词语引发的脑响应也随其在前文语境中的可预测性而变化。这些信息在时间和传感器维度上既有共性也有差异：它们呈现不同的时间响应特征，而在传感器上的分布则可以具有可重复性并相互重叠。
 
-**完整论文：** [阅读或下载 32 页 PDF](docs/assets/readme/output-example-paper.pdf)。
+**完整论文：** [阅读或下载 42 页 PDF](docs/assets/readme/output-example-paper.pdf)。
 
 <table>
   <tr>
     <td align="center" valign="top" width="25%"><a href="docs/assets/readme/output-example-paper-page-1.png"><img src="docs/assets/readme/output-example-paper-page-1.png" alt="第 1 页：示例论文标题与摘要" width="220"></a></td>
-    <td align="center" valign="top" width="25%"><a href="docs/assets/readme/output-example-paper-page-9.png"><img src="docs/assets/readme/output-example-paper-page-9.png" alt="第 9 页：声学滞后支持、历史控制与时间敏感性分析" width="220"></a></td>
-    <td align="center" valign="top" width="25%"><a href="docs/assets/readme/output-example-paper-page-15.png"><img src="docs/assets/readme/output-example-paper-page-15.png" alt="第 15 页：分布式传感器模式及其跨故事和时段的重复性" width="220"></a></td>
-    <td align="center" valign="top" width="25%"><a href="docs/assets/readme/output-example-paper-page-21.png"><img src="docs/assets/readme/output-example-paper-page-21.png" alt="第 21 页：协方差、校准恢复与预测控制" width="220"></a></td>
+    <td align="center" valign="top" width="25%"><a href="docs/assets/readme/output-example-paper-page-11.png"><img src="docs/assets/readme/output-example-paper-page-11.png" alt="第 11 页：声学与语言描述的条件预测贡献及短语差异" width="220"></a></td>
+    <td align="center" valign="top" width="25%"><a href="docs/assets/readme/output-example-paper-page-18.png"><img src="docs/assets/readme/output-example-paper-page-18.png" alt="第 18 页：传感器响应分布的相似性、可重复性与受控头皮响应对比" width="220"></a></td>
+    <td align="center" valign="top" width="25%"><a href="docs/assets/readme/output-example-paper-page-21.png"><img src="docs/assets/readme/output-example-paper-page-21.png" alt="第 21 页：时间与传感器的联合组织及校准" width="220"></a></td>
   </tr>
 </table>
 
-> **模型：** GPT-Astra，medium reasoning effort
+> **模型：** gpt-6.1-sol，high reasoning effort
 >
-> **Provider 调用次数：** 4,437
+> **Provider 调用次数：** 40,472（含 947 次上下文压缩）
 >
-> **成功的工具调用次数：** 5,591
+> **成功的工具调用次数：** 69,993
 
 ## Stable 路线图
 

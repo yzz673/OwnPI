@@ -158,13 +158,13 @@ See [Getting Started](docs/user/getting-started.md) for setup details, task file
 
 ## End-to-end Research Example
 
-**Research topic:** How acoustic and sentence-associated information differ in their temporal support and sensor recurrence in non-invasive brain recordings.
+**Research topic:** What acoustic and linguistic information is retained in non-invasive brain recordings, and how it is expressed across time and sensors.
 
 **Deliverables:** Manuscript, supplementary materials, source data, and source code.
 
-**Manuscript:** This 32-page paper, *Acoustic and sentence-associated information differ in their temporal support and sensor recurrence in non-invasive recordings*, was produced by OwnPI **without any human intervention** during the research run. It asks which descriptions of speech predict non-invasive brain recordings, when those associations contribute, and how their sensor patterns recur across stories and recording sessions. Using 164 MEG recordings from 23 participants, the study compares acoustic features, phoneme identity, isolated-word representations, contextual representations, and word surprisal. Stories are held out for testing, and competing predictors, temporal controls, preprocessing comparisons, and direct prediction tests define what the results can support.
+**Manuscript:** This 42-page paper, *Non-invasive brain recordings retain acoustic and linguistic information with distinct temporal and sensor profiles*, was produced by OwnPI through autonomous research. It asks which acoustic and linguistic descriptions predict non-invasive brain responses and how their associated information is expressed across time and sensors. The study finds that non-invasive brain recordings retain acoustic, sound-form, lexical, and contextual information, and that responses to words vary with their predictability from the preceding context. These types of information show both shared and distinct patterns: their temporal profiles differ, while their distributions across sensors can be reproducible and overlapping.
 
-**Complete paper:** [Read or download the 32-page PDF](docs/assets/readme/output-example-paper.pdf).
+**Complete paper:** [Read or download the 42-page PDF](docs/assets/readme/output-example-paper.pdf).
 
 <table>
   <tr>
@@ -172,22 +172,22 @@ See [Getting Started](docs/user/getting-started.md) for setup details, task file
       <a href="docs/assets/readme/output-example-paper-page-1.png"><img src="docs/assets/readme/output-example-paper-page-1.png" alt="Page 1: title and abstract of the example research paper" width="220"></a>
     </td>
     <td align="center" valign="top" width="25%">
-      <a href="docs/assets/readme/output-example-paper-page-9.png"><img src="docs/assets/readme/output-example-paper-page-9.png" alt="Page 9: acoustic lag support, history controls, and temporal sensitivity analyses" width="220"></a>
+      <a href="docs/assets/readme/output-example-paper-page-11.png"><img src="docs/assets/readme/output-example-paper-page-11.png" alt="Page 11: conditional acoustic and linguistic contributions and phrase distinctions" width="220"></a>
     </td>
     <td align="center" valign="top" width="25%">
-      <a href="docs/assets/readme/output-example-paper-page-15.png"><img src="docs/assets/readme/output-example-paper-page-15.png" alt="Page 15: distributed sensor patterns and their recurrence across stories and sessions" width="220"></a>
+      <a href="docs/assets/readme/output-example-paper-page-18.png"><img src="docs/assets/readme/output-example-paper-page-18.png" alt="Page 18: sensor-profile similarity, reproducibility, and controlled scalp contrasts" width="220"></a>
     </td>
     <td align="center" valign="top" width="25%">
-      <a href="docs/assets/readme/output-example-paper-page-21.png"><img src="docs/assets/readme/output-example-paper-page-21.png" alt="Page 21: covariance, calibrated recovery, and prediction controls" width="220"></a>
+      <a href="docs/assets/readme/output-example-paper-page-21.png"><img src="docs/assets/readme/output-example-paper-page-21.png" alt="Page 21: joint time-by-sensor organization and calibration" width="220"></a>
     </td>
   </tr>
 </table>
 
-> **Model:** GPT-Astra, medium reasoning effort
+> **Model:** gpt-6.1-sol, high reasoning effort
 >
-> **Provider calls:** 4,437
+> **Provider calls:** 40,472 (including 947 context compactions)
 >
-> **Successful tool calls:** 5,591
+> **Successful tool calls:** 69,993
 
 ## Stable Roadmap
 

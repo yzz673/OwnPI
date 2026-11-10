@@ -1,0 +1,53 @@
+{
+  "description": "Seven-stage research workflow, synchronized with the active website runtimeFlow. Transparent bilingual animation with analysis-to-review and return-to-method iteration.",
+  "source": {
+    "website_commit": "0b0d69c0fc6d5a691c51cd7719514a5cd42069a8",
+    "element": "#runtimeFlow"
+  },
+  "renderer": "@resvg/resvg-js; img2webp lossless",
+  "stage_count": 7,
+  "revisit_targets": [
+    2,
+    3,
+    4,
+    5
+  ],
+  "files": {
+    "zh": {
+      "file": "hd-workflow.zh.webp",
+      "source": "workflow-source.zh.svg",
+      "sha256": "394b008fdd79e8a360edcb9122591058a952dfd81534ccfbe496f70b16807327",
+      "bytes": 143022,
+      "width": 2664,
+      "height": 1490,
+      "duration_ms": 12000,
+      "stages": [
+        "文献与背景",
+        "研究问题界定",
+        "方法设计",
+        "实验设计",
+        "实现与执行",
+        "分析与评审",
+        "产物打包与论文撰写"
+      ]
+    },
+    "en": {
+      "file": "hd-workflow.en.webp",
+      "source": "workflow-source.en.svg",
+      "sha256": "aefdfcdfb89b7bbceba7aab23c209d9d86f1a9387f16f27e9758fe9d2c29e770",
+      "bytes": 156970,
+      "width": 2664,
+      "height": 1490,
+      "duration_ms": 12000,
+      "stages": [
+        "Literature Grounding",
+        "Research Framing",
+        "Method Design",
+        "Experiment Design",
+        "Implementation & Execution",
+        "Analysis & Review",
+        "Artifact Packaging & Paper Writing"
+      ]
+    }
+  }
+}

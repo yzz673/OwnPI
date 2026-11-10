@@ -53,9 +53,9 @@ Real research rarely follows a straight path. A research plan often needs repeat
 
 ### Review-Driven Iteration
 
-[![Native website animation: iterative research workflow](docs/assets/readme/hd-workflow.en.webp)](docs/assets/readme/hd-workflow.en.webp)
+[![Seven-stage research workflow animation](docs/assets/readme/hd-workflow.en.webp)](docs/assets/readme/hd-workflow.en.webp)
 
-OwnPI organizes research as a loop that can return upstream, not a pipeline that can only move forward. After locking the task and establishing its literature and background, it advances through the necessary hypothesis, method, experiment, implementation, and analysis work; when analysis and review expose a problem, the run returns to the hypothesis, method, experiment, or implementation stage that needs correction, and only accepted work proceeds to packaging the paper, code, figures, and reproducible outputs. Each run activates the stages it needs. Review and revisit limits depend on the selected review profile; rigorous review has no round limit, and exhaustive review also removes the Analysis revisit limit.
+OwnPI organizes research as a loop that can return upstream, not a pipeline that can only move forward. The seven stages are literature grounding, research framing, method design, experiment design, implementation and execution, analysis and review, and artifact packaging and paper writing. When analysis and review expose a problem, the run returns to research framing, method design, experiment design, or implementation and execution as needed; accepted work proceeds to packaging the paper, code, figures, and reproducible outputs. Each run activates the stages it needs. Review and revisit limits depend on the selected review profile; rigorous review has no round limit, and exhaustive review also removes the Analysis revisit limit.
 
 ### Paper-Derived Knowledge
 

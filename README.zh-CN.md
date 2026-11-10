@@ -23,9 +23,9 @@ OwnPI，你的专属首席研究员。用户给出研究目标和可用资源后
 
 OwnPI 当前主要面向神经科学研究，尤其是脑信号、神经数据和神经解码。OwnPI Core 提供通用研究工作流；可选的 Neuroscience Pack 为 Core 增加神经科学专用工具、少量相关 skills 和论文知识。Core 也可以扩展到其他研究领域；Neuroscience Pack 是对 Core 的专业化扩展，不会替代 Core。
 
-[![OwnPI 后续 Stable TUI 的 5 秒预览：界定研究任务并启动分阶段工作流](docs/assets/readme/terminal-demo-0-5s.gif)](https://galaxy-dawn.github.io/neuroagent-website/?lang=zh#heroTerminalDemo)
+[![OwnPI 后续 Stable TUI 的 30 秒演示：任务、技能装配、并行协作与分析迭代](docs/assets/readme/terminal-demo-30s-10shots.gif)](https://galaxy-dawn.github.io/neuroagent-website/?lang=zh#heroTerminalDemo)
 
-*这是后续 Stable 版本所规划 TUI 的预览；Beta 版本使用下方的命令行工作流。*
+*这段 30 秒剪辑包含 10 个镜头，每个 3 秒，展示 Task 模式下的研究任务、技能装配、并行协作与分析迭代。这是后续 Stable TUI 的预览；当前公开 Beta 使用命令行工作流。*
 
 ## 快速导航
 
@@ -187,7 +187,7 @@ ownpi run resume <run_id> --background
 
 统一的 Stable Base 同时包含 `ownpi`（CLI）和 `ownpi-tui`（终端界面），共用配置、凭据和运行记录。执行一次 `ownpi setup` 后即可用 `ownpi-tui` 启动。当前已发布 Beta 在 Stable 发布前仍为 CLI-only；发布后默认 Beta 安装可用 `ownpi update` 原地升级，无需卸载或清空数据。工作区和恢复参数见 [终端界面](docs/user/tui.zh-CN.md)。
 
-[![Stable 版本计划提供的 OwnPI TUI 预览](docs/assets/readme/terminal-demo-0-5s.gif)](https://galaxy-dawn.github.io/neuroagent-website/?lang=zh#heroTerminalDemo)
+[![OwnPI 后续 Stable TUI 的 30 秒演示：任务、技能装配、并行协作与分析迭代](docs/assets/readme/terminal-demo-30s-10shots.gif)](https://galaxy-dawn.github.io/neuroagent-website/?lang=zh#heroTerminalDemo)
 
 ### 自适应任务编排
 

@@ -1,0 +1,41 @@
+{
+  "description": "Thirty-second Task-mode research highlights from the planned Stable TUI; not a demonstration of the current CLI-only Beta interface.",
+  "source": {
+    "website_commit": "0b0d69c0fc6d5a691c51cd7719514a5cd42069a8",
+    "mp4_url": "https://galaxy-dawn.github.io/neuroagent-website/assets/ownpi-demo-30s-10shots-1080p.mp4",
+    "mp4_sha256": "f5064f94144b88b43606bc0d77c82d88e0fdf808d7d5228e726706524330c91b",
+    "duration_seconds": 30,
+    "shots": 10,
+    "seconds_per_shot": 3
+  },
+  "preview": {
+    "file": "terminal-demo-30s-10shots.gif",
+    "sha256": "578e3bf1f59c676932f925be79f95ef6fc45d7478d196a4601b2e7698cd7128c",
+    "bytes": 3552472,
+    "width": 1280,
+    "height": 720,
+    "frames": 360,
+    "fps": 12,
+    "duration_ms": 30000,
+    "shot_start_ms": [
+      0,
+      3000,
+      6000,
+      9000,
+      12000,
+      15000,
+      18000,
+      21000,
+      24000,
+      27000
+    ],
+    "loop": 0,
+    "encoder": "FFmpeg Lanczos scale, palettegen stats_mode=diff, paletteuse bayer_scale=3 diff_mode=rectangle"
+  },
+  "links": {
+    "en": "https://galaxy-dawn.github.io/neuroagent-website/?lang=en#heroTerminalDemo",
+    "zh": "https://galaxy-dawn.github.io/neuroagent-website/?lang=zh#heroTerminalDemo"
+  },
+  "privacy": "The source edit replaces the original username and host with equal-length aliases. The raw terminal recording is not included.",
+  "verified_date": "2026-11-10"
+}

@@ -21,6 +21,10 @@ OwnPI, your own principal investigator. After the user provides a research objec
 
 OwnPI is currently designed primarily for neuroscience research, especially work involving brain signals, neural data, and neural decoding. OwnPI contains a Core that supports a general research workflow, with an optional Neuroscience Pack that adds neuroscience-specific skills and knowledge to OwnPI Core. OwnPI Core can also be extended to research in other fields; the pack specializes Core for neuroscience without replacing it.
 
+[![30-second OwnPI TUI demo: ten three-second shots of a research task in Task mode](docs/assets/readme/terminal-demo-30s-10shots.gif)](https://galaxy-dawn.github.io/neuroagent-website/?lang=en#heroTerminalDemo)
+
+*This 30-second edit contains ten three-second shots showing a research task in Task mode, skill assembly, parallel agents, and iterative analysis. It previews the TUI planned for Stable; the current public Beta uses the command-line workflow.*
+
 ## Quick Navigation
 
 | Section | What it helps with |
@@ -197,7 +201,7 @@ The currently published Beta remains CLI-only until Stable is published. Default
 Beta installations then upgrade with `ownpi update`, without uninstalling or
 clearing data. See [Terminal UI](docs/user/tui.md) for workspace and resume options.
 
-[![Preview of the OwnPI TUI planned for the Stable release](docs/assets/readme/terminal-demo-0-5s.gif)](https://galaxy-dawn.github.io/neuroagent-website/?lang=en#heroTerminalDemo)
+[![30-second preview of the planned OwnPI Stable TUI: tasks, skill assembly, parallel agents, and iterative analysis](docs/assets/readme/terminal-demo-30s-10shots.gif)](https://galaxy-dawn.github.io/neuroagent-website/?lang=en#heroTerminalDemo)
 
 ### Adaptive Task Orchestration
 

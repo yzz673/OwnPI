@@ -224,6 +224,7 @@ The Stable release will publish the OwnPI source code together with the installa
 - [Getting Started](docs/user/getting-started.md): installation, model setup, first task, and updates.
 - [Configuration](docs/user/configuration.md): model access, review profiles, and subagents.
 - [CLI Reference](docs/user/cli-reference.md): task management and optional Pack commands.
+- [TUI User Guide](docs/user/tui.md): interactive tasks, approvals, stopping, and recovery.
 - [Troubleshooting](docs/troubleshooting.md): installation, model access, and task recovery.
 - [Third-Party Notices](THIRD_PARTY_NOTICES.md).
 

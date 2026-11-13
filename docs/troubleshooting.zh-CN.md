@@ -15,7 +15,7 @@ ownpi info
 - **模型请求失败**：检查服务类型、Base URL、API key 和准确的模型名称。
   `doctor` 通过不代表已经验证过真实模型调用。HTTP 401/403 通常与授权有关，
   404 可能是 URL 或模型不正确，具体以服务方返回信息为准。OpenAI-compatible
-  配置要求 Responses API；仅支持 Chat Completions 的网关无法使用。另请查看
+  配置要求 Responses API；仅支持 Chat Completions 的网关无法使用。Anthropic-compatible 配置使用 Messages API。另请查看
   [配置说明](user/configuration.zh-CN.md)。
 - **缺少产品资源或安装损坏**：使用安装器重新安装，再运行 `doctor`。
   仍然失败时请报告错误。
@@ -24,7 +24,6 @@ ownpi info
 ## 下载或 checksum 校验失败
 
 检查网络，重试[快速开始](user/getting-started.zh-CN.md)中的安装命令。
-如果收到私有内测下载地址，请按随附的访问说明操作。
 不要跳过 TLS 或 checksum 校验；反复失败时请报告命令和错误信息。
 
 ## 任务长时间没有输出或意外中断
@@ -53,13 +52,13 @@ Resume 使用已保存记录，可能会重复未完成的工作。请保持原�
 
 ## 任务已完成，但交付物不易查找
 
-阅读 run 结束时的摘要并检查研究工作区。最终交付物通常位于 `<workspace>/output_synthesis/final_delivery/` 下，也可能包含交付说明 `README.md`；实际目录和文件名由模型决定。应以本次 run 生成的说明和文件为准，不要假定路径固定。`run status` 中的 `Run directory` 指向托管运行记录，不一定是研究交付物目录。
+阅读 run 结束时的摘要并检查工作区。Research 的交付物通常位于 `<workspace>/output_synthesis/final_delivery/` 下，并附有交付说明 `README.md`，但实际目录和文件名由模型决定。Direct 任务返回回答及任务相关产物，不要求使用该目录。应以本次 run 生成的说明和文件为准，不要假定路径固定。`run status` 中的 `Run directory` 指向托管运行记录，不一定是交付物目录。
 
 `State: completed` 只表示执行结束，不代表科研结果的质量或完整性已经得到保证。请对照实际文件、报告中的局限和任务要求检查结果。已停止或失败的 run 可能留下中间产物。
 
 ## 帮助中出现澄清或权限命令
 
-当前 CLI 仍显示用于处理待定交互的兼容命令。它们不是正常无人值守 Beta 工作流的必需步骤，也不会开启受支持的交互式权限模式。没有对应的待处理交互时，运行这些命令不会创建交互。详见 [CLI 参考](user/cli-reference.zh-CN.md#帮助中仍显示的兼容命令)。如需停止并稍后恢复任务，请使用 `run stop`。
+检查 run 是否有待回答的问题或待处理的权限请求。使用 [CLI 交互命令](user/cli-reference.zh-CN.md#问题与权限)或 [TUI 控件](user/tui.zh-CN.md#7-处理审批与问题)响应。没有对应的待处理交互时，运行命令不会创建交互。如需停止并稍后恢复任务，请使用 `run stop`。
 
 ## 报告问题
 

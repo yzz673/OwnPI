@@ -9,7 +9,7 @@
 
 | 设置 | 填写内容 |
 | --- | --- |
-| Provider | OpenAI-compatible 或 Anthropic-compatible |
+| Provider | OpenAI-compatible（Responses API）或 Anthropic-compatible（Messages API） |
 | API key | 所选服务方提供的有效密钥 |
 | Base URL | 服务地址，不追加具体请求接口 |
 | Model | 服务方实际支持的准确模型名称 |
@@ -35,20 +35,24 @@ ownpi config show
 export OWNPI_HOME=/path/to/app-home
 ```
 
+## 执行模式
+
+在 `config.yaml` 现有的 `runtime` 部分设置 `runtime.default_profile`：`task`（Direct）用于交互请求，`research` 用于七阶段研究工作流。未显式选择模式时，`auto` 回落到 Direct，不会根据请求复杂度分类。CLI setup 生成的配置使用 `research`。
+
+在 TUI 中，使用 `/runtime`、`/direct` 或 `/research` 为新任务选择模式。已有 run 保留原模式。详见 [TUI 指南](tui.zh-CN.md#执行模式)。
+
 ## Review profile
 
-Beta 使用 Research Level workflow，默认的 `auto` 会选择 `rigorous`。
+默认的 `auto` review profile 在 Task Level（Direct）下选择 `standard`，在 Research Level 下选择 `rigorous`。
 
-| Profile | 每个审阅循环的 Reviewer 轮数上限 | 整个 workflow 的 Analysis 回访次数上限 |
-| --- | --- | --- |
-| `auto` | 与 `rigorous` 相同 | 与 `rigorous` 相同 |
-| `standard` | 1 | 1 |
-| `rigorous` | 不设上限 | 3 |
-| `exhaustive` | 不设上限 | 不设上限 |
+| Profile | 整个 Research 工作流的 Analysis 回访次数上限 |
+| --- | --- |
+| `auto` | 与 `rigorous` 相同 |
+| `standard` | 1 |
+| `rigorous` | 3 |
+| `exhaustive` | 不设上限 |
 
-回访是返回之前的研究阶段进行修改。达到审阅轮数上限会结束该循环，
-不要求 Reviewer 确认没有问题。不设上限的策略可能长时间运行，
-需要时可以[按 Ctrl-C 或用 run stop 停止任务](cli-reference.zh-CN.md)，之后用 `resume` 继续。
+回访是返回之前的研究阶段进行修改。所有 profile 都不限制单个 critic loop 中的 Reviewer 轮数。回访预算适用于 Research 工作流，不限制 Direct 会话中的后续消息。这些设置不保证特定质量或耗时。评审可能长时间运行，需要时可以[按 Ctrl-C 或用 run stop 停止任务](cli-reference.zh-CN.md#ownpi-run-stop)。
 
 ```bash
 ownpi config set-review-profile standard
@@ -71,4 +75,4 @@ runtime:
 
 可通过 `ownpi run start --workspace /path/to/project --message-file /path/to/task.md` 指定研究工作区；省略 `--workspace` 时使用启动命令时的当前目录。列出、停止或恢复 run 时继续使用同一个应用目录。工作区保存研究文件，应用目录保存配置和托管 run 记录，两者用途不同。
 
-Beta 使用无人值守的完全访问模式（配置中的 `full_access`）和 Research Level workflow。请使用专用工作区，并在任务说明中提供清晰的资源路径和限制。交互式权限审批不属于当前 Beta 支持的工作流。
+请使用专用工作区，并在任务说明中提供清晰的资源路径和限制。CLI setup 生成 `runtime.permissions.preset: full_access`；OwnPI 也支持交互审批。在 TUI 中使用 `/permissions` 查看并选择 Ask for approval、Approve for me 或 Full Access。请检查活动 run 的实际权限；修改设置不会追溯改变已有 run。详见[处理审批与问题](tui.zh-CN.md#7-处理审批与问题)。

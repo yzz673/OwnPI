@@ -2,17 +2,18 @@
 
 ## English
 
-OwnPI Beta is available under the [OwnPI Beta Evaluation License](../LICENSE).
-You may install and run it for research and evaluation, keep private backups,
-and use or publish your research outputs subject to applicable third-party rights.
-Redistribution, sale and modification of OwnPI-owned product components require
-separate written permission. The Beta is not an open-source release.
+OwnPI-authored code and documentation in [`source/`](../source/README.md) use
+[Apache-2.0](../source/LICENSE), unless separately identified. Third-party code,
+papers, templates, and reference assets retain their own terms; see the
+[source notices](../source/THIRD_PARTY_NOTICES.md).
 
-Public documentation and installer contributions are welcome through forks
-and pull requests. This does not grant rights to modify or redistribute the
-product packages. Third-party components keep their own licenses; see
-[Third-Party Notices](../THIRD_PARTY_NOTICES.md) and the notices in each package.
-The English [LICENSE](../LICENSE) is the controlling license text.
+The root [LICENSE](../LICENSE) still contains the OwnPI Beta Evaluation License,
+whose text addresses distribution-repository materials and Beta packages.
+It has not been replaced by a unified stable-product license. Do not apply this
+page's source-license statement to every product material or binary package;
+consult their accompanying licenses and [Third-Party Notices](../THIRD_PARTY_NOTICES.md).
+This documentation update does not change either license or grant additional
+rights over other materials.
 
 ## 中文
 

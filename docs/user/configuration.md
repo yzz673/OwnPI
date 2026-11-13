@@ -32,18 +32,24 @@ To use a different app home, set this before installation and subsequent command
 export OWNPI_HOME=/path/to/app-home
 ```
 
+## Execution mode
+
+Set `runtime.default_profile` in the existing `runtime` section of `config.yaml` to `task` (Direct) for interactive requests or `research` for the seven-stage research workflow. `auto` falls back to Direct when no explicit mode is selected; it does not classify requests by complexity. CLI setup generates a `research` configuration.
+
+In the TUI, use `/runtime`, `/direct`, or `/research` to select the mode for new tasks. Existing runs retain their original mode. See the [TUI guide](tui.md#execution-mode).
+
 ## Review profile
 
-The Beta uses the Research Level workflow. The default `auto` review profile selects `rigorous`.
+The default `auto` review profile selects `standard` for Task Level (Direct) and `rigorous` for Research Level.
 
-| Profile | Reviewer rounds per review loop | Total Analysis revisits per workflow |
-| --- | --- | --- |
-| `auto` | Same as `rigorous` | Same as `rigorous` |
-| `standard` | 1 | 1 |
-| `rigorous` | Unlimited | 3 |
-| `exhaustive` | Unlimited | Unlimited |
+| Profile | Total Analysis revisits per Research workflow |
+| --- | --- |
+| `auto` | Same as `rigorous` |
+| `standard` | 1 |
+| `rigorous` | 3 |
+| `exhaustive` | Unlimited |
 
-A revisit returns to an earlier research stage for revision. Reaching a review round limit ends that loop without requiring a clean review. These profiles control iteration budgets rather than guaranteeing a particular quality level or duration. Unlimited profiles may run for a long time; use [Ctrl-C or run stop](cli-reference.md#ownpi-run-stop) when needed.
+A revisit returns to an earlier research stage for revision. No profile imposes a Reviewer round limit within a critic loop. Revisit budgets apply to Research workflows, not follow-up messages in Direct sessions. These settings do not guarantee a particular quality level or duration. Review can run for a long time; use [Ctrl-C or run stop](cli-reference.md#ownpi-run-stop) when needed.
 
 ```bash
 ownpi config set-review-profile standard
@@ -65,4 +71,4 @@ Set `subagent_enabled` to `false` to disable them. `subagent_max_count` must be 
 
 Use `ownpi run start --workspace /path/to/project --message-file /path/to/task.md` to choose the research workspace. Without `--workspace`, a new run uses the current directory. Keep using the same app home when listing, stopping, or resuming that run; a workspace and an app home serve different purposes.
 
-The Beta uses unattended full access (`full_access` in the configuration) and the Research Level workflow. Use a dedicated workspace and provide clear resource paths and constraints in the task brief. Interactive permission approval is not part of the supported Beta workflow.
+Use a dedicated workspace and provide clear resource paths and constraints in the task brief. CLI setup generates `runtime.permissions.preset: full_access`; interactive approval is also supported. In the TUI, use `/permissions` to inspect and select Ask for approval, Approve for me, or Full Access. Check the active run's actual permissions; changing settings does not retroactively change an existing run. See [approvals and questions](tui.md#7-handle-approvals-and-questions).

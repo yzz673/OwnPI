@@ -17,7 +17,7 @@ ownpi info
 
 ## Download or checksum failure
 
-Check network access and retry the installer from [Getting Started](user/getting-started.md). If you received a private beta download address, follow the accompanying access instructions. Do not bypass TLS or checksum verification. Report repeated failures with the command and error text.
+Check network access and retry the installer from [Getting Started](user/getting-started.md). Do not bypass TLS or checksum verification. Report repeated failures with the command and error text.
 
 ## Task appears stuck or was interrupted
 
@@ -42,13 +42,13 @@ If `run list` cannot find a known run, check that you are using the original `OW
 
 ## Run completed but outputs are hard to find
 
-Read the run's closing summary and inspect the research workspace. Final deliverables are usually under `<workspace>/output_synthesis/final_delivery/`, often with a delivery `README.md`, but the model chooses the actual directories and filenames. Follow the instructions and artifacts produced by that run rather than assuming a fixed path. `Run directory` in `run status` points to managed run records, not necessarily the deliverables.
+Read the run's closing summary and inspect the workspace. Research deliverables are usually under `<workspace>/output_synthesis/final_delivery/`, often with a delivery `README.md`, but the model chooses the actual directories and filenames. Direct tasks return an answer and any task-specific artifacts without requiring that directory. Follow the instructions and artifacts produced by that run rather than assuming a fixed path. `Run directory` in `run status` points to managed run records, not necessarily the deliverables.
 
 `State: completed` describes execution state; it does not certify the quality or completeness of the scientific result. Check the actual files and reported limitations against your requested deliverables. Files from a stopped or failed run may be intermediate outputs.
 
 ## Clarification or permission commands appear in help
 
-The current CLI still exposes compatibility commands for pending interactions. They are not required for the normal unattended Beta workflow and do not enable a supported interactive permission mode. Running them without a matching pending interaction does not create one. See [CLI Reference](user/cli-reference.md#compatibility-commands-still-visible-in-help) for their scope. Use `run stop` when you intend to stop and later resume work.
+Check whether the run has a pending question or permission request. Use the [CLI interaction commands](user/cli-reference.md#questions-and-permissions) or the [TUI controls](user/tui.md#7-handle-approvals-and-questions) to respond. Running a command without a matching pending interaction does not create one. Use `run stop` when you intend to stop and later resume work.
 
 ## Report a problem
 

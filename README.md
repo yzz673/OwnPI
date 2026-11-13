@@ -1,7 +1,3 @@
-> **v0.1.0 Stable:** The first stable release replaces the earlier Beta packages and includes CLI + TUI. See the [release notes](docs/releases/v0.1.0.md) for current capabilities and upgrade instructions; Beta-only descriptions below are historical and are being updated.
-
-Stable source is included in [`source/`](source/README.md) when you clone this repository. See its README for dependencies and optional source execution. Releases contain installable products; there is no separate source-package download. Licensing for that directory is described in [`source/LICENSE`](source/LICENSE) and its third-party notices.
-
 <div align="center">
   <img src="docs/assets/readme/ownpi-lockup.png" alt="OwnPI: Your Own Principal Investigator" width="720">
   <p>
@@ -17,8 +13,6 @@ Stable source is included in [`source/`](source/README.md) when you clone this r
 
 </div>
 
-> **Beta notice:** The current release is a Beta intended for experiencing the complete research workflow and should not yet be treated as production-stable. Compatibility issues or undiscovered defects may remain. The Beta runs the workflow through the command line with unattended `full access` execution; use it only in a dedicated workspace and do not expose sensitive files. The Beta does not publish the TUI or provide interactive permission approval. The Stable release will formally include these capabilities. Bug reports are welcome through [GitHub Issues](https://github.com/yzz673/OwnPI/issues), along with community [Pull Requests](https://github.com/yzz673/OwnPI/pulls) that improve features, documentation, and stability.
-
 # OwnPI
 
 OwnPI, your own principal investigator. After the user provides a research objective and available resources, OwnPI advances literature research, problem framing, method and experiment design, implementation, analysis, and output synthesis as needed, dynamically drawing on the appropriate tools, paper-derived knowledge, and general research skills. When a stage result is insufficient, it returns to the relevant stage for iterative correction. Throughout the run, it records sources, decisions, state, and deliverables so the research process and results remain inspectable, traceable, and evidence-grounded.
@@ -27,7 +21,7 @@ OwnPI is currently designed primarily for neuroscience research, especially work
 
 [![30-second OwnPI TUI demo: ten three-second shots of a research task in Task mode](docs/assets/readme/terminal-demo-30s-10shots.gif)](https://galaxy-dawn.github.io/neuroagent-website/?lang=en#heroTerminalDemo)
 
-*This 30-second edit contains ten three-second shots showing a research task in Task mode, skill assembly, parallel agents, and iterative analysis. It previews the TUI planned for Stable; the current public Beta uses the command-line workflow.*
+*This 30-second edit contains ten three-second shots showing a research task in Task mode, skill assembly, parallel agents, and iterative analysis in the OwnPI TUI.*
 
 ## Quick Navigation
 
@@ -35,9 +29,9 @@ OwnPI is currently designed primarily for neuroscience research, especially work
 | --- | --- |
 | [Why You Need OwnPI](#why-you-need-ownpi) | Decide when OwnPI is a better fit than a fixed automated research pipeline. |
 | [Core Workflow](#core-workflow) | See task routing, iterative review, paper-derived knowledge, and skill assembly. |
-| [Quick Start](#quick-start) | Install the Beta, describe a research task, and start the first command-line run. |
+| [Quick Start](#quick-start) | Install OwnPI and start a task through the CLI or TUI. |
 | [End-to-end Research Example](#end-to-end-research-example) | See a completed research project and read its manuscript. |
-| [Stable Roadmap](#stable-roadmap) | See the capabilities planned for the Stable release. |
+| [Source](#source) | Find the stable source and its dependency and execution instructions. |
 | [Documentation](#documentation) | Find the user documentation for installing and operating OwnPI. |
 | [Feedback](#feedback) | Report issues and propose changes with enough context to evaluate them. |
 | [Acknowledgments](#acknowledgments) | See the projects and contributors that support OwnPI. |
@@ -49,7 +43,7 @@ Common automated research frameworks are good at taking a well-defined task thro
 
 Real research rarely follows a straight path. A research plan often needs repeated refinement or even a complete rethink; one failed experiment may send the researcher back to the implementation or method design. OwnPI treats research as a project you can keep advancing, inspect, and recover, not a one-shot prompt-to-answer task:
 
-- It activates only the stages a task needs instead of forcing every request through the full pipeline.
+- It offers Direct sessions for interactive tasks and a complete Research workflow for end-to-end projects.
 - When something goes wrong, it can return to the upstream stage that needs correction instead of only retrying the last step.
 - It records key decisions, tool activity, permissions, progress, and artifacts so interrupted work can be inspected and continued.
 
@@ -59,7 +53,7 @@ Real research rarely follows a straight path. A research plan often needs repeat
 
 [![Seven-stage research workflow animation](docs/assets/readme/hd-workflow.en.webp)](docs/assets/readme/hd-workflow.en.webp)
 
-OwnPI organizes research as a loop that can return upstream, not a pipeline that can only move forward. The seven stages are literature grounding, research framing, method design, experiment design, implementation and execution, analysis and review, and artifact packaging and paper writing. When analysis and review expose a problem, the run returns to research framing, method design, experiment design, or implementation and execution as needed; accepted work proceeds to packaging the paper, code, figures, and reproducible outputs. Each run activates the stages it needs. Review and revisit limits depend on the selected review profile; rigorous review has no round limit, and exhaustive review also removes the Analysis revisit limit.
+OwnPI organizes research as a loop that can return upstream, not a pipeline that can only move forward. The seven stages are literature grounding, research framing, method design, experiment design, implementation and execution, analysis and review, and artifact packaging and paper writing. When analysis and review expose a problem, the run returns to research framing, method design, experiment design, or implementation and execution as needed; accepted work proceeds to packaging the paper, code, figures, and reproducible outputs. Research Level uses all seven stages. Review profiles limit total Analysis revisits: standard allows one, rigorous allows three, and exhaustive has no cap. None of these profiles caps Reviewer rounds within a critic loop.
 
 ### Paper-Derived Knowledge
 
@@ -81,13 +75,13 @@ This is a general Core capability. The Neuroscience Pack contributes a small set
 
 ### Install and configure
 
-The current Beta provides packages for Apple Silicon macOS (arm64) and Linux x86_64. Packages are hosted on GitHub Releases. Install the release package:
+OwnPI v0.1.0 provides packages for Apple Silicon macOS (arm64) and Linux x86_64. Packages are hosted on GitHub Releases. Install the release package:
 
 ```bash
 curl -fsSL https://raw.githubusercontent.com/yzz673/OwnPI/main/install.sh | bash
 ```
 
-The installer places the app home at `~/.ownpi` and the command at `~/.local/bin/ownpi`. If your shell cannot find `ownpi`, add its directory to the current shell's `PATH`:
+The installer places the app home at `~/.ownpi` and the commands at `~/.local/bin/ownpi` and `~/.local/bin/ownpi-tui`. If your shell cannot find them, add their directory to the current shell's `PATH`:
 
 ```bash
 export PATH="$HOME/.local/bin:$PATH"
@@ -121,6 +115,12 @@ ownpi pack status neuroscience
 ownpi tools doctor brainlib
 ```
 
+### Choose an execution mode
+
+For interactive work, run `ownpi-tui` from your project directory. Use `/direct` for Task Level (Direct) sessions with follow-up messages, or `/research` for the full research workflow. Inspect permissions with `/permissions` before submitting work. CLI and TUI share the same app home; see the [TUI guide](docs/user/tui.md) for interaction and recovery.
+
+The following CLI example assumes `runtime.default_profile: research`, as generated by `ownpi setup`. Set this field to `task` for Direct; see [Execution mode](docs/user/configuration.md#execution-mode). Mode changes apply to new tasks, not existing runs.
+
 ### Describe a research task
 
 Give OwnPI a research brief that explains the project you want to pursue. Include the research question or direction, the intended contribution, available resources with concrete paths, practical constraints, and expected deliverables. You do not need a finished experimental plan; make clear which decisions OwnPI should investigate and develop.
@@ -144,7 +144,7 @@ Start the task in a dedicated project workspace:
 ownpi run start --message-file /path/to/task.md --workspace /path/to/your/project
 ```
 
-Omit `--workspace` to use the current directory. The workspace holds research files and outputs; `~/.ownpi` holds configuration and managed run records. The Beta runs the Research Level workflow through the CLI. OwnPI reads the request and selects the stages needed for the task.
+Omit `--workspace` to use the current directory. The workspace holds research files and outputs; `~/.ownpi` holds configuration and managed run records.
 
 `start` and `resume` run in the foreground by default. Add `--background` to either command to return to the shell while work continues. Use `run list` to find a run ID, then inspect or control that run:
 
@@ -193,34 +193,6 @@ See [Getting Started](docs/user/getting-started.md) for setup details, task file
 >
 > **Successful tool calls:** 69,993
 
-## Stable Roadmap
-
-The following capabilities are planned for the Stable release and are not part of the current Beta.
-
-### TUI
-
-The unified Stable Base includes both `ownpi` (CLI) and `ownpi-tui` (terminal UI),
-sharing configuration, credentials and runs. After `ownpi setup`, run `ownpi-tui`.
-The currently published Beta remains CLI-only until Stable is published. Default
-Beta installations then upgrade with `ownpi update`, without uninstalling or
-clearing data. See [Terminal UI](docs/user/tui.md) for workspace and resume options.
-
-[![30-second preview of the planned OwnPI Stable TUI: tasks, skill assembly, parallel agents, and iterative analysis](docs/assets/readme/terminal-demo-30s-10shots.gif)](https://galaxy-dawn.github.io/neuroagent-website/?lang=en#heroTerminalDemo)
-
-### Adaptive Task Orchestration
-
-[![Native website animation: adaptive runtime routing and research depth](docs/assets/readme/hd-routing.en.webp)](docs/assets/readme/hd-routing.en.webp)
-
-The Stable release will support adaptive routing across task depths and workflow modes. The current Beta runs the Research Level workflow through the CLI.
-
-### Safer Permission Modes
-
-The Stable release will provide more granular permission profiles and interactive approval controls, allowing users to choose how file, network, and execution access is granted during a run.
-
-### Source Availability
-
-The Stable release will publish the OwnPI source code together with the installable product.
-
 ## Documentation
 
 - [Getting Started](docs/user/getting-started.md): installation, model setup, first task, and updates.
@@ -230,16 +202,21 @@ The Stable release will publish the OwnPI source code together with the installa
 - [Troubleshooting](docs/troubleshooting.md): installation, model access, and task recovery.
 - [Third-Party Notices](THIRD_PARTY_NOTICES.md).
 
+## Source
+
+Cloning this repository includes the stable source in [`source/`](source/README.md). Its README explains dependencies and optional source execution. Release assets provide installable products; source execution uses dependencies you prepare yourself.
+
 ## License
 
-OwnPI Beta is available under the [OwnPI Beta Evaluation License](LICENSE).
-Installation and research evaluation are permitted; redistribution, sale and
-modification of OwnPI-owned product components require separate permission.
-Third-party components retain their own licenses. See [usage and licensing](docs/licensing.md).
+OwnPI-authored source in `source/` is licensed under [Apache-2.0](source/LICENSE),
+unless separately identified. Third-party materials retain their own terms; see
+[source notices](source/THIRD_PARTY_NOTICES.md). For other product materials,
+consult the [repository license](LICENSE), notices in the packages, and
+[usage and licensing](docs/licensing.md).
 
 ## Feedback
 
-The Beta is distributed as an installable product rather than a source release. Please use [GitHub Issues](https://github.com/yzz673/OwnPI/issues) to report installation problems, provider failures, runtime interruptions, unexpected outputs, or documentation issues.
+Please use [GitHub Issues](https://github.com/yzz673/OwnPI/issues) to report installation problems, provider failures, runtime interruptions, unexpected outputs, or documentation issues.
 
 Include the OwnPI version, operating system, command, relevant run status, and steps to reproduce. Do not include API keys, private data, or sensitive workspace contents.
 

@@ -2,7 +2,7 @@
 
 [中文](cli-reference.zh-CN.md) | **English**
 
-This reference covers the commands currently exposed by the CLI, including the compatibility commands identified below. For the first installation and a research-task template, see [Getting Started](getting-started.md).
+This reference covers the commands currently exposed by the CLI. For the first installation and a research-task template, see [Getting Started](getting-started.md).
 
 ## Conventions
 
@@ -60,7 +60,7 @@ Print the runtime and model configuration summary, including the selected model 
 ownpi config set-review-profile <auto|standard|rigorous|exhaustive> [--config PATH]
 ```
 
-Save the review profile without rerunning setup. For example, `ownpi config set-review-profile rigorous` selects unlimited reviewer rounds and up to three total Analysis revisits. In the Beta's Research Level workflow, `auto` resolves to `rigorous`. See [Review profile](configuration.md#review-profile) for all budgets.
+Save the review profile without rerunning setup. For example, `ownpi config set-review-profile rigorous` allows up to three total Analysis revisits in a Research workflow. No profile caps Reviewer rounds. `auto` resolves to `standard` for Task Level (Direct) and `rigorous` for Research Level. See [Review profile](configuration.md#review-profile) for all budgets.
 
 ## Runs
 
@@ -70,7 +70,7 @@ Save the review profile without rerunning setup. For example, `ownpi config set-
 ownpi run start [message] [--message-file PATH] [--workspace PATH] [--background] [--json] [--config PATH]
 ```
 
-Create and execute a new research run. Supply the task as a quoted positional message or a UTF-8 file with `--message-file`. For a research project, use a brief that states the question, resources, constraints, and deliverables; see the [task template](getting-started.md#start-your-first-task). The file is read as task text, not as a YAML or JSON configuration. Use `--message-file -` to read task text from standard input.
+Create and execute a new Task Level (Direct) or Research Level run according to `runtime.default_profile`; see [Execution mode](configuration.md#execution-mode). Supply the task as a quoted positional message or a UTF-8 file with `--message-file`. For a research project, use a brief that states the question, resources, constraints, and deliverables; see the [task template](getting-started.md#start-your-first-task). The file is read as task text, not as a YAML or JSON configuration. Use `--message-file -` to read task text from standard input.
 
 `--workspace` selects the research directory, creating it if necessary; it defaults to the directory where you launch the command. `--background` starts a detached process and returns a run ID without waiting for completion. Without it, the run stays in the foreground. `--json` changes the CLI result format, not whether work runs in the foreground.
 
@@ -207,7 +207,7 @@ Remove installed Pack releases and managed Brainlib resources and disconnect the
 ownpi skills list [--json]
 ```
 
-List visible research skills and their sources. Core skills are bundled; installing the Neuroscience Pack adds its skills. The Beta does not support discovering or installing additional skills through the CLI.
+List visible research skills and their sources. Core skills are bundled; installing the Neuroscience Pack adds its skills. The CLI does not provide discovery or installation commands for additional skills.
 
 ### `ownpi skills remove`
 
@@ -215,7 +215,7 @@ List visible research skills and their sources. Core skills are bundled; install
 ownpi skills remove <skill_name> [--json]
 ```
 
-Delete a user-installed skill directory from `<app_home>/skills`. Use its directory name. This command cannot remove bundled skills or Pack skills, even if they appear in `skills list`, and fails if no matching user-installed skill exists. A fresh Beta installation generally has no such user-installed skills. The removal result is printed as JSON.
+Delete a user-installed skill directory from `<app_home>/skills`. Use its directory name. This command cannot remove bundled skills or Pack skills, even if they appear in `skills list`, and fails if no matching user-installed skill exists. A fresh installation generally has no such user-installed skills. The removal result is printed as JSON.
 
 ### `ownpi tools list`
 
@@ -233,9 +233,9 @@ ownpi tools doctor brainlib [--json]
 
 Check Brainlib's managed installation and entrypoint. Brainlib requires the Neuroscience Pack. If it is unavailable, install or enable the Pack as appropriate, then repeat the check. This does not run a research task.
 
-## Compatibility commands still visible in help
+## Questions and permissions
 
-The current CLI also exposes the following clarification and permission commands. They act only on pending interactions in an existing run and are not setup steps or part of the supported unattended Beta workflow. Their presence in help does not mean interactive permission modes are supported for normal Beta use.
+The following commands handle pending questions and permission requests in an existing run. They are not setup steps. The TUI also provides [interactive question and approval controls](tui.md#7-handle-approvals-and-questions).
 
 These commands require the session-managed run directory, not a run ID. Obtain it from `ownpi run status <run_id>`. They do not create a missing question or permission request.
 

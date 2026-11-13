@@ -1,0 +1,202 @@
+AGENT MARKDOWN
+⦁ NeuroAgent
+  在一个隔离的 direct_qa 阶段适合回答清晰的问题。
+  > Source-backed resize keeps https://example.test/a/very/long/path intact.
+  • copy, transcript, and resume keep raw Markdown
+
+SESSION
+  Resume session
+  Select a persisted run to continue
+  ▸ 1. Missing dataset run  [paused]  EDA · paused_for_human · /workspace
+    Enter confirm   Esc cancel
+
+HUMAN QUESTION
+╭──────────────────────────────────────────────────────────────────────────────╮
+│                                                                              │
+│ Question 1/1 (1 unanswered) · Required                                       │
+│                                                                              │
+│ The bound ./data directory does not exist. Choose how to continue.           │
+│                                                                              │
+│ ▸ 1. Provide a local path  Use a readable EEG file or directory.             │
+│   2. Stop this run         Record BLOCKED_DATA_ACCESS and finish.            │
+│   3. None of the above     Optionally, add details in notes (tab).           │
+│                                                                              │
+│ ┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄ │
+│ tab to add notes | enter to submit answer | esc to interrupt                 │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+INTERACTION RESULTS
+⦁ Dataset path
+  • EEG dataset path
+    answer: /workspace/data
+    note: Use the local recording directory
+⦁ Permission answered
+  ↳ approve once
+
+COMMAND VIEWS
+HELP
+  Commands
+  / Search commands
+  > /model        Choose the active model
+    /reasoning    Choose reasoning effort
+    /permissions  Update model permissions
+    /settings     Open runtime and interface settings
+    /resume       Resume a persisted chat session
+    /runs         Browse and manage workflow runs
+    /review       Review a selected repository scope
+    /skills       Manage installed skills
+    /memory       Inspect or edit instruction memory
+    /candidates   Browse and review runtime candidates
+    /status       Show current session and runtime status
+    /ps           Show and manage background terminals
+  Up/Down or Ctrl+P/Ctrl+N move  Enter insert  Esc close               1-12/20
+
+HELP SCROLLED
+  Commands
+  / Search commands
+    /memory       Inspect or edit instruction memory
+    /candidates   Browse and review runtime candidates
+    /status       Show current session and runtime status
+    /ps           Show and manage background terminals
+    /diff         Show the working-tree diff
+    /copy         Preview and copy the latest response
+    /raw          Choose rich or raw transcript rendering
+    /theme        Choose the syntax highlighting theme
+    /compaction   Configure context compaction
+    /clear        Start a new chat session
+    /commands     Browse available slash commands
+  > /exit         Exit OwnPI
+  Up/Down or Ctrl+P/Ctrl+N move  Enter insert  Esc close               9-20/20
+
+CONTEXT
+  Context
+  /runs  Structured context inspector
+  Run
+  Run directory             /Users/example/.neuro-agent/sessions/session-123/
+                            tasks/direct-qa/runs/run-456
+  Status                    completed
+  Final decision            accept
+  Current stage             direct_qa
+  Scope and lineage
+  Runtime scope             direct_runtime
+  Attempt                   Not applicable
+  Query chain               qc:direct_qa:a1:1
+  Continuation              0
+  Startup and instructions
+  Repository                /Users/example/project
+  Up/Down scroll  PgUp/PgDn page  Esc close                            1-15/37
+
+CONTEXT SCROLLED
+  Context
+  /runs  Structured context inspector
+  Git branch                develop-00
+  Runtime date              2026-07-30
+  Instruction layers        0
+  Memory and reconstruction
+  Session memory            absent; working set absent; 0 history entries
+  Reconstruction            resume_restore; fresh_runtime_build; checkpoint
+                            compacted: no
+  Context usage
+  Rendered tokens           8445
+  Estimated tokens          8445
+  Provider tokens           14764
+  Compaction threshold      116000
+  Maximum context           128000
+  Up/Down scroll  PgUp/PgDn page  Esc close                           16-30/37
+
+OPTION PICKER
+  Choose model
+  Available runtime profiles
+  model-0 (current)  Model 0 description
+  model-1            Model 1 description
+  model-2            Model 2 description
+  model-3            Model 3 description
+  model-4            Model 4 description
+  model-5            Model 5 description
+  model-6            Model 6 description
+  model-7            Model 7 description
+  Up/Down move  Enter select  Esc close                                 1-8/14
+
+OPTION PICKER SCROLLED
+  Choose model
+  Available runtime profiles
+  model-3   Model 3 description
+  model-4   Model 4 description
+  model-5   Model 5 description
+  model-6   Model 6 description
+  model-7   Model 7 description
+  model-8   Model 8 description
+  model-9   Model 9 description
+  model-10  Model 10 description
+  Up/Down move  Enter select  Esc close                                4-11/14
+
+COMPLETION POPUPS
+SLASH
+  /commands  Browse commands
+  /status    Show session status
+  /runs      Browse workflow runs
+
+  Enter/Tab insert  Esc close
+
+FILE
+  src/main.rs
+
+  Enter/Tab insert  Esc close
+
+SKILL
+  Brain Data Intake Audit  Audit neuroscience datasets
+  ML Paper Writing         Write publication-ready papers
+
+  Press Enter to insert or Esc to close
+
+SKILLS ROOT
+  Skills
+  Choose an action
+  ▸ 1. List skills            Insert $ and choose an enabled skill.
+    2. Enable/Disable Skills  Search and toggle skills by their SKILL.md path.
+    3. Install a skill        Install from a local path or GitHub URL.
+    4. Remove a skill         Remove a user-installed skill by SKILL.md path.
+    Enter select  Esc close
+
+SKILLS LIST
+  Brain Data Intake Audit  Audit neuroscience datasets
+  ML Paper Writing         Write publication-ready papers
+
+  Press Enter to insert or Esc to close
+
+SKILLS
+  Enable/Disable Skills
+  Changes are saved automatically.
+  Type to search skills
+  >
+  › [x] Brain Data Intake Audit  Audit neuroscience datasets
+    [ ] ML Paper Writing         Write publication-ready papers
+  Up/Down or Ctrl+P/Ctrl+N move  Space/Enter toggle  Esc close
+
+SKILL INSTALL
+  Install Skill
+  Install from a local path or GitHub URL.
+  [Local path]  [GitHub URL]
+  Local path: /Users/example/skills/eeg-analysis
+  Tab source  Enter install  Esc back
+
+REVIEW
+  Review changes
+  Choose the evidence boundary for this review
+  ▸ 1. Uncommitted changes  Review git diff
+    2. Latest workflow run  Review persisted artifacts
+    Enter confirm   Esc cancel
+
+SETTINGS
+  Settings
+  Runtime and interface configuration
+  ▸  1. Model                 Choose the active model
+     2. Reasoning             Choose reasoning effort for the active model
+     3. Permissions           Update model permissions
+     4. Theme                 Choose syntax highlighting theme
+     5. Transcript rendering  Choose rich or raw history
+     6. Runtime profile       Choose automatic, task, or research execution
+     7. Interface mode        Switch user or developer mode
+     8. Compaction            Configure summary mode and LLM profile
+    Enter open   Esc cancel                                             1-8/12

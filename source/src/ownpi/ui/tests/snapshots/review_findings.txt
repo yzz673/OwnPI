@@ -1,0 +1,108 @@
+WIDTH 32
+AUDIT / READINESS · CHECKING
+Handoff check · literature
+grounding · Attempt 1 · Round 1
+ FINDINGS · 2 issues · P1 ×1 ·
+P2 ×1
+
+01  P1  Missing source for the
+        main comparison
+
+02  P2  摘要把预印本连续语音识别
+        证据表述为已发表研究
+
+ OVERALL
+
+  One attribution correction and
+  one missing source remain. 保
+  留原始审核内容。
+
+Review complete
+
+WIDTH 40
+╭─ AUDIT / READINESS · CHECKING
+│ Handoff check · literature grounding ·
+│ Attempt 1 · Round 1
+│
+├─ FINDINGS · 2 issues · P1 ×1 · P2 ×1
+│ 
+│ 01  P1  Missing source for the main
+│         comparison
+│ 
+│ 02  P2  摘要把预印本连续语音识别证据表
+│         述为已发表研究
+│ 
+├─ OVERALL
+│ 
+│     One attribution correction and one
+│     missing source remain. 保留原始审
+│     核内容。
+│ 
+╰─ Review complete
+
+WIDTH 60
+╭─ AUDIT / READINESS · CHECKING
+│ Handoff check · literature grounding · Attempt 1 · Round 1
+│
+├─ FINDINGS · 2 issues · P1 ×1 · P2 ×1
+│ 
+│ 01  P1  Missing source for the main comparison
+│ 
+│ 02  P2  摘要把预印本连续语音识别证据表述为已发表研究
+│ 
+├─ OVERALL
+│ 
+│     One attribution correction and one missing source
+│     remain. 保留原始审核内容。
+│ 
+╰─ Review complete
+
+WIDTH 80
+╭─ AUDIT / READINESS · CHECKING
+│ Handoff check · literature grounding · Attempt 1 · Round 1
+│
+├─ FINDINGS · 2 issues · P1 ×1 · P2 ×1
+│ 
+│ 01  P1  Missing source for the main comparison
+│ 
+│ 02  P2  摘要把预印本连续语音识别证据表述为已发表研究
+│ 
+├─ OVERALL
+│ 
+│     One attribution correction and one missing source remain. 保留原始审核内
+│     容。
+│ 
+╰─ Review complete
+
+WIDTH 120
+╭─ AUDIT / READINESS · CHECKING
+│ Handoff check · literature grounding · Attempt 1 · Round 1
+│
+├─ FINDINGS · 2 issues · P1 ×1 · P2 ×1
+│ 
+│ 01  P1  Missing source for the main comparison
+│ 
+│ 02  P2  摘要把预印本连续语音识别证据表述为已发表研究
+│ 
+├─ OVERALL
+│ 
+│     One attribution correction and one missing source remain. 保留原始审核内容。
+│ 
+╰─ Review complete
+
+WIDTH 220
+╭─ AUDIT / READINESS · CHECKING
+│ Handoff check · literature grounding · Attempt 1 · Round 1
+│
+├─ FINDINGS · 2 issues · P1 ×1 · P2 ×1
+│ 
+│ 01  P1  Missing source for the main comparison
+│ 
+│ 02  P2  摘要把预印本连续语音识别证据表述为已发表研究
+│ 
+├─ OVERALL
+│ 
+│     One attribution correction and one missing source remain. 保留原始审核内容。
+│ 
+╰─ Review complete
+

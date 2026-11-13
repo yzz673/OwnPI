@@ -1,0 +1,38 @@
+{
+  "input": {
+    "citation_ref": "lit:citation:aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+    "claim": "Single-trial EEG can decode the attended speech stream in a controlled listening task.",
+    "assessment": "supported",
+    "passage_refs": ["lit:source:bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb@0:400"],
+    "reason": "The abstract describes this task."
+  },
+  "result": {
+    "outcome": "supported",
+    "verification_receipt": {
+      "bibtex_key": "example2026attention",
+      "claim": "Single-trial EEG can decode the attended speech stream in a controlled listening task.",
+      "assessment": "supported",
+      "status": "supported",
+      "diagnostics": []
+    },
+    "citation_ref": "lit:citation:aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+    "assessment_ref": "lit:assessment:cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc",
+    "assessor": "agent",
+    "content_levels": ["abstract"],
+    "evidence_binding": "stored_source",
+    "passage_refs": ["lit:source:bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb@0:400"]
+  },
+  "expected": {
+    "citation_ref": "lit:citation:aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+    "bibtex_key": "example2026attention",
+    "claim": "Single-trial EEG can decode the attended speech stream in a controlled listening task.",
+    "assessor": "agent",
+    "assessment": "supported",
+    "content_levels": ["abstract"],
+    "evidence_binding": "stored_source",
+    "passage_count": 1,
+    "assessment_ref": "lit:assessment:cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc",
+    "diagnostics": [],
+    "guidance": ""
+  }
+}

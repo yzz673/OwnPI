@@ -1,0 +1,70 @@
+WIDTH 32
+
+  Recovery · Provider request
+  failed
+
+  Stage · literature_grounding
+
+  The provider exhausted its
+  in-turn retries. The durable
+  run can be resumed.
+
+  › 1. Retry current stage
+      Resume the same durable
+      run.
+    2. Continue offline
+      Resume without hosted
+      web search.
+    3. End task
+      Preserve existing
+      artifacts.
+
+  Enter confirm  ↑/↓ select
+  Esc end task
+
+
+WIDTH 80
+
+  Recovery · Provider request failed
+
+  Stage · literature_grounding
+
+  The provider exhausted its in-turn retries. The durable run can be resumed.
+
+  › 1. Retry current stage  Resume the same durable run.
+    2. Continue offline     Resume without hosted web search.
+    3. End task             Preserve existing artifacts.
+
+  Enter confirm  ↑/↓ select  Esc end task
+
+
+WIDTH 120
+
+  Recovery · Provider request failed
+
+  Stage · literature_grounding
+
+  The provider exhausted its in-turn retries. The durable run can be resumed.
+
+  › 1. Retry current stage  Resume the same durable run.
+    2. Continue offline     Resume without hosted web search.
+    3. End task             Preserve existing artifacts.
+
+  Enter confirm  ↑/↓ select  Esc end task
+
+
+WIDTH 220
+
+  Recovery · Provider request failed
+
+  Stage · literature_grounding
+
+  The provider exhausted its in-turn retries. The durable run can be resumed.
+
+  › 1. Retry current stage  Resume the same durable run.
+    2. Continue offline     Resume without hosted web search.
+    3. End task             Preserve existing artifacts.
+
+  Enter confirm  ↑/↓ select  Esc end task
+
+

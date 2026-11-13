@@ -1,0 +1,267 @@
+AGENT MARKDOWN
+⦁ NeuroAgent
+  在一个隔离的
+  direct_qa 阶段适合
+  回答清晰的问题。
+  > Source-backed r
+  > esize keeps
+  > https://example.test/a/very/long/path
+  > intact.
+  • copy,
+    transcript, and
+    resume keep raw
+    Markdown
+
+SESSION
+  Resume session
+  Select a
+  persisted run to
+  continue
+  ▸ 1. Missing
+       dataset run
+       [paused]
+    Enter confirm
+    Esc cancel
+
+HUMAN QUESTION
+╭──────────────────╮
+│                  │
+│ 1/1 · R          │
+│                  │
+│ The bound ./data │
+│ directory does   │
+│ not exist.       │
+│ Choose how to    │
+│ continue.        │
+│                  │
+│ ▸ 1. Provide a   │
+│ local path       │
+│     Use a        │
+│     readable EEG │
+│     file or      │
+│     directory.   │
+│   2. Stop this   │
+│ run              │
+│     Record       │
+│     BLOCKED_DATA │
+│     _ACCESS and  │
+│     finish.      │
+│   3. None of the │
+│ above            │
+│     Optionally,  │
+│     add details  │
+│     in notes     │
+│     (tab).       │
+│                  │
+│ ┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄ │
+│ tab to add notes │
+│ enter to submit  │
+│ esc to interrupt │
+│                  │
+╰──────────────────╯
+
+INTERACTION RESULTS
+⦁ Dataset path
+  • EEG dataset
+    path
+    answer:
+    /workspace/data
+    note:
+    Use the local
+    recording
+    directory
+⦁ Permission answered
+  ↳ approve once
+
+COMMAND VIEWS
+HELP
+  Commands
+  / Search
+  > /model   Choo…
+    /reaso…  Choo…
+    /permi…  Upda…
+    /setti…  Open…
+    /resume  Resu…
+    /runs    Brow…
+    /review  Revi…
+    /skills  Mana…
+    /memory  Insp…
+    /candi…  Brow…
+    /status  Show…
+    /ps      Show…
+  Up/Dn Enter Esc
+           1-12/20
+
+HELP SCROLLED
+  Commands
+  / Search
+    /memory  Insp…
+    /candi…  Brow…
+    /status  Show…
+    /ps      Show…
+    /diff    Show…
+    /copy    Prev…
+    /raw     Choo…
+    /theme   Choo…
+    /compa…  Conf…
+    /clear   Star…
+    /comma…  Brow…
+  > /exit    Exit…
+  Up/Dn Enter Esc
+           9-20/20
+
+CONTEXT
+  Context
+  /runs
+  Run
+  Run directory
+    /Users/
+    example/.neuro
+    -agent/
+    sessions/
+    session-123/
+    tasks/direct-
+    qa/runs/run-
+    456
+  Status
+    completed
+  Final decision
+    accept
+  Up/Dn Esc
+           1-14/92
+
+CONTEXT SCROLLED
+  Context
+  /runs
+  Current stage
+    direct_qa
+  Scope and
+  lineage
+  Runtime scope
+    direct_runtime
+  Attempt
+    Not applicable
+  Query chain
+    qc:direct_qa:a
+    1:1
+  Continuation
+    0
+  Up/Dn Esc
+          15-28/92
+
+OPTION PICKER
+  Choose model
+  Available
+  runtime profiles
+  model-0
+  (current)
+      Model 0
+      description
+  model-1
+      Model 1
+      description
+  Up/Dn Enter Esc
+            1-2/14
+
+OPTION PICKER SCROLLED
+  Choose model
+  Available
+  runtime profiles
+  model-8
+      Model 8
+      description
+  model-9
+      Model 9
+      description
+  model-10
+      Model 10
+      description
+  Up/Dn Enter Esc
+           9-11/14
+
+COMPLETION POPUPS
+SLASH
+  /commands  Brow…
+  /status    Show…
+  /runs      Brow…
+
+  Enter/Tab Esc
+
+FILE
+  src/main.rs
+
+  Enter/Tab Esc
+
+SKILL
+  Brain Da…  Audi…
+  ML Paper…  Writ…
+
+  Enter insert
+  Esc close
+
+SKILLS ROOT
+  Skills
+  Choose an action
+  ▸ 1. List skills
+    2. Enable/
+       Disable
+       Skills
+    3. Install a
+       skill
+    4. Remove a
+       skill
+    Enter select
+    Esc close
+
+SKILLS LIST
+  Brain Da…  Audi…
+  ML Paper…  Writ…
+
+  Enter insert
+  Esc close
+
+SKILLS
+  Skills
+  Search skills
+  >
+  › [x] Br…  Audi…
+    [ ] ML…  Writ…
+  Up/Dn Space Esc
+
+SKILL INSTALL
+  Install
+  [Local] [GitHub]
+  Local path: /
+  Users/example/
+  skills/eeg-
+  analysis
+  Tab Enter Esc
+
+REVIEW
+  Review changes
+  Choose the
+  evidence
+  boundary for
+  this review
+  ▸ 1. Uncommitted
+       changes
+    2. Latest
+       workflow
+       run
+    Enter confirm
+    Esc cancel
+
+SETTINGS
+  Settings
+  Runtime and
+  interface
+  configuration
+  ▸  1. Model
+     2. Reasoning
+     3.
+        Permission
+        s
+     4. Theme
+    Enter open
+    Esc cancel
+            1-4/12

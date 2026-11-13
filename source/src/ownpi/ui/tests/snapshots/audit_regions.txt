@@ -1,0 +1,176 @@
+WIDTH 20
+AUDIT / READINESS ·
+CHECKING
+Handoff check ·
+literature grounding
+· Attempt 1 · Round
+1
+⦁ Checking sources.
+  中文换行与英文
+  mixed text.
+  https://
+  example.org/long/
+  source/path
+ NO FINDINGS
+
+✓ No material
+findings.
+
+ OVERALL
+
+  Scope remains
+  limited.
+
+Review complete
+AUDIT / REVIEWER ·
+REVIEWING
+Quality review ·
+literature grounding
+· Attempt 1 · Round
+1
+⦁ Checking sources.
+  中文换行与英文
+  mixed text.
+  https://
+  example.org/long/
+  source/path
+ NO FINDINGS
+
+✓ No material
+findings.
+
+ OVERALL
+
+  Scope remains
+  limited.
+
+Review complete
+
+WIDTH 40
+╭─ AUDIT / READINESS · CHECKING
+│ Handoff check · literature grounding ·
+│ Attempt 1 · Round 1
+│
+│ ⦁ Checking sources. 中文换行与英文
+│   mixed text. https://example.org/
+│   long/source/path
+│
+├─ NO FINDINGS
+│ 
+│ ✓ No material findings.
+│ 
+├─ OVERALL
+│ 
+│     Scope remains limited.
+│ 
+╰─ Review complete
+╭─ AUDIT / REVIEWER · REVIEWING
+│ Quality review · literature grounding
+│ · Attempt 1 · Round 1
+│
+│ ⦁ Checking sources. 中文换行与英文
+│   mixed text. https://example.org/
+│   long/source/path
+│
+├─ NO FINDINGS
+│ 
+│ ✓ No material findings.
+│ 
+├─ OVERALL
+│ 
+│     Scope remains limited.
+│ 
+╰─ Review complete
+
+WIDTH 80
+╭─ AUDIT / READINESS · CHECKING
+│ Handoff check · literature grounding · Attempt 1 · Round 1
+│
+│ ⦁ Checking sources. 中文换行与英文mixed text. https://example.org/long/source/
+│   path
+│
+├─ NO FINDINGS
+│ 
+│ ✓ No material findings.
+│ 
+├─ OVERALL
+│ 
+│     Scope remains limited.
+│ 
+╰─ Review complete
+╭─ AUDIT / REVIEWER · REVIEWING
+│ Quality review · literature grounding · Attempt 1 · Round 1
+│
+│ ⦁ Checking sources. 中文换行与英文mixed text. https://example.org/long/source/
+│   path
+│
+├─ NO FINDINGS
+│ 
+│ ✓ No material findings.
+│ 
+├─ OVERALL
+│ 
+│     Scope remains limited.
+│ 
+╰─ Review complete
+
+WIDTH 120
+╭─ AUDIT / READINESS · CHECKING
+│ Handoff check · literature grounding · Attempt 1 · Round 1
+│
+│ ⦁ Checking sources. 中文换行与英文mixed text. https://example.org/long/source/path
+│
+├─ NO FINDINGS
+│ 
+│ ✓ No material findings.
+│ 
+├─ OVERALL
+│ 
+│     Scope remains limited.
+│ 
+╰─ Review complete
+╭─ AUDIT / REVIEWER · REVIEWING
+│ Quality review · literature grounding · Attempt 1 · Round 1
+│
+│ ⦁ Checking sources. 中文换行与英文mixed text. https://example.org/long/source/path
+│
+├─ NO FINDINGS
+│ 
+│ ✓ No material findings.
+│ 
+├─ OVERALL
+│ 
+│     Scope remains limited.
+│ 
+╰─ Review complete
+
+WIDTH 220
+╭─ AUDIT / READINESS · CHECKING
+│ Handoff check · literature grounding · Attempt 1 · Round 1
+│
+│ ⦁ Checking sources. 中文换行与英文mixed text. https://example.org/long/source/path
+│
+├─ NO FINDINGS
+│ 
+│ ✓ No material findings.
+│ 
+├─ OVERALL
+│ 
+│     Scope remains limited.
+│ 
+╰─ Review complete
+╭─ AUDIT / REVIEWER · REVIEWING
+│ Quality review · literature grounding · Attempt 1 · Round 1
+│
+│ ⦁ Checking sources. 中文换行与英文mixed text. https://example.org/long/source/path
+│
+├─ NO FINDINGS
+│ 
+│ ✓ No material findings.
+│ 
+├─ OVERALL
+│ 
+│     Scope remains limited.
+│ 
+╰─ Review complete
+

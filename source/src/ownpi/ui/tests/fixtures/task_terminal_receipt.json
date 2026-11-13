@@ -1,0 +1,33 @@
+{
+  "type": "item_completed",
+  "turn_id": "turn-failed",
+  "item_id": "turn-failed:task-outcome",
+  "item_kind": "task_outcome",
+  "status": "failed",
+  "thread_item": {
+    "schema_version": "ownpi.thread_item",
+    "kind": "task_outcome",
+    "item_id": "turn-failed:task-outcome",
+    "call_id": "turn-failed:task-outcome",
+    "tool_name": "run_outcome",
+    "status": "failed",
+    "action": "complete_task",
+    "visibility": "user",
+    "payload": {
+      "task_id": "task-failed",
+      "delivery_status": "failed",
+      "task_success": false,
+      "outcome": "runtime_provider_or_protocol_failure",
+      "outcome_source": "runtime",
+      "failure_cause": "Provider unavailable",
+      "failure_detail": "Server overloaded",
+      "turn_completion": {
+        "turn_id": "turn-failed",
+        "status": "failed",
+        "elapsed_ms": 30000,
+        "terminal_detail": "runtime_provider_or_protocol_failure",
+        "required_terminal_item_ids": ["turn-failed:task-outcome"]
+      }
+    }
+  }
+}

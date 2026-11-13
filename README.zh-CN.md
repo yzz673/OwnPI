@@ -1,3 +1,5 @@
+> **v0.1.0 Stable：** 首个正式版本替换此前的 Beta 安装包，并包含 CLI + TUI。当前能力及升级方式以[发布说明](docs/releases/v0.1.0.md)为准；下文仅限 Beta 的说明属于待更新的历史内容。
+
 <div align="center">
   <img src="docs/assets/readme/ownpi-lockup.png" alt="OwnPI：Your Own Principal Investigator" width="720">
   <p>

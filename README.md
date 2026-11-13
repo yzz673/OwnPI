@@ -1,3 +1,5 @@
+> **v0.1.0 Stable:** The first stable release replaces the earlier Beta packages and includes CLI + TUI. See the [release notes](docs/releases/v0.1.0.md) for current capabilities and upgrade instructions; Beta-only descriptions below are historical and are being updated.
+
 <div align="center">
   <img src="docs/assets/readme/ownpi-lockup.png" alt="OwnPI: Your Own Principal Investigator" width="720">
   <p>

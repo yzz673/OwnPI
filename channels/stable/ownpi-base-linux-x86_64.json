@@ -5,7 +5,7 @@
   "channel": "stable",
   "target": "linux-x86_64",
   "artifact": "https://github.com/yzz673/OwnPI/releases/download/v0.1.0/ownpi-base-0.1.0-linux-x86_64.tar.gz",
-  "checksum": "108b0da398ffdba69a9911b457d237e0ab9b7415123a54e9c9b0e1bbecc4a03e",
+  "checksum": "062322fab24807a0dbad9e433b79939ffc6a0d21547fe583e431b0e832d93852",
   "components": [
     {
       "component_id": "core",
@@ -28,12 +28,14 @@
         "zstandard>=0.23.0",
         "gdown>=5.2.0",
         "jsonschema>=4.23.0",
-        "packaging>=24.0"
+        "packaging>=24.0",
+        "pybtex==0.26.1"
       ],
       "capabilities": [
-        "ownpi-runtime"
+        "ownpi-runtime",
+        "ownpi-tui"
       ],
-      "digest": "ebc459482fb23936f784ffd2fed3dceb2ce568178f4203248cbaffe47bdf994b"
+      "digest": "5ad66f4e4143b0ae071c28a13cf99da20e07e4a8434eb4c3e3e5d138612be26b"
     },
     {
       "component_id": "dependency-bundle",
@@ -52,7 +54,7 @@
         "latex-pdf-build",
         "document-rendering"
       ],
-      "digest": "7d465a73afbf94abe70233d2346255198a481059f675b976998a203993eb121f"
+      "digest": "fd8523e22d9659ce35705bbf64f0aff205bb7a865936933d06525923365b4e6a"
     }
   ],
   "python_runtime": {

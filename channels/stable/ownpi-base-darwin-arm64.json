@@ -5,7 +5,7 @@
   "channel": "stable",
   "target": "darwin-arm64",
   "artifact": "https://github.com/yzz673/OwnPI/releases/download/v0.1.0/ownpi-base-0.1.0-darwin-arm64.tar.gz",
-  "checksum": "f4f155949207408d57893e630e13c5e6b406f8ad89b63e7ca27470405a554ac4",
+  "checksum": "5c9273a6dd3fc0010b7081f89e5d3acbeeea632a88de631a387e9f19bca9a870",
   "components": [
     {
       "component_id": "core",
@@ -28,12 +28,14 @@
         "zstandard>=0.23.0",
         "gdown>=5.2.0",
         "jsonschema>=4.23.0",
-        "packaging>=24.0"
+        "packaging>=24.0",
+        "pybtex==0.26.1"
       ],
       "capabilities": [
-        "ownpi-runtime"
+        "ownpi-runtime",
+        "ownpi-tui"
       ],
-      "digest": "7fb6d9e1eb83ae7dd9bd4eed45ce8aa5bc1156e9ec98298506b9cfd7b7644703"
+      "digest": "453efaeb883bd91bfff7226285c88577ba962c562f512047a7f4e251d60e073a"
     },
     {
       "component_id": "dependency-bundle",
@@ -52,7 +54,7 @@
         "latex-pdf-build",
         "document-rendering"
       ],
-      "digest": "5f77a03aee9ae454f1717dfb9db09dacf850e15e1b456237c5597d9838b3ffd9"
+      "digest": "4e03b784348baa8933a73f55c062f2b628b078f0a9bfaf62cf3b9fd606aab390"
     }
   ],
   "python_runtime": {

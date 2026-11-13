@@ -1,5 +1,7 @@
 > **v0.1.0 Stable:** The first stable release replaces the earlier Beta packages and includes CLI + TUI. See the [release notes](docs/releases/v0.1.0.md) for current capabilities and upgrade instructions; Beta-only descriptions below are historical and are being updated.
 
+Stable source is included in [`source/`](source/README.md) when you clone this repository. See its README for dependencies and optional source execution. Releases contain installable products; there is no separate source-package download. Licensing for that directory is described in [`source/LICENSE`](source/LICENSE) and its third-party notices.
+
 <div align="center">
   <img src="docs/assets/readme/ownpi-lockup.png" alt="OwnPI: Your Own Principal Investigator" width="720">
   <p>

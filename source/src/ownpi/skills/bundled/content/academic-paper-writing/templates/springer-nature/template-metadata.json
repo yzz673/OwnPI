@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "template_id": "springer-nature-journal-article",
+  "display_name": "Springer Nature LaTeX Journal Article Template",
+  "version": "3 December 2023",
+  "profile": "top-tier-scientific-journal",
+  "source": "https://www.springernature.com/gp/authors/campaigns/latex-author-support",
+  "source_archive_sha256": "75d3e288402dbe8a789cc2f0083464c28997de46f787ec16d8fb059b73b7ac5c",
+  "source_provenance": "Springer Nature author-support archive preserved in benchmark-managed materials.",
+  "license": "Mixed template distribution: LPPL-licensed LaTeX class and bibliography components with Springer Nature authoring materials; retain embedded notices.",
+  "license_review": "The class and bibliography files carry embedded LPPL notices. The complete archive is publicly distributed by Springer Nature for manuscript authoring; no separate archive-level license file is included.",
+  "entry_point": "sn-article.tex",
+  "bibliography_path": "sn-bibliography.bib",
+  "compile_engine": "pdflatex",
+  "default_template_used": true,
+  "authoritative_policy_source": false
+}

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Research Data Availability"
+  short_description: "Prepare publication data statements and repository plans"
+  default_prompt: "Use $research-data-availability to prepare a Data Availability statement, repository plan, dataset citations, and FAIR metadata checks for this manuscript."

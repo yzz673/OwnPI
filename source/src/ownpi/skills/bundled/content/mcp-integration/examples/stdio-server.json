@@ -1,0 +1,21 @@
+{
+  "runtime": {
+    "mcp_servers": [
+      {
+        "name": "filesystem",
+        "transport": "stdio",
+        "command": ["npx", "-y", "@modelcontextprotocol/server-filesystem", "/absolute/project/path"],
+        "env": {"LOG_LEVEL": "info"},
+        "timeout_seconds": 20
+      },
+      {
+        "name": "custom-tools",
+        "transport": "stdio",
+        "command": ["python", "-m", "my_mcp_server", "--port", "8080"],
+        "cwd": "/absolute/project/path",
+        "env": {"DEBUG": "false"},
+        "timeout_seconds": 20
+      }
+    ]
+  }
+}

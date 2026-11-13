@@ -1,0 +1,33 @@
+# OwnPI user configuration template.
+# Run `ownpi setup` to configure the provider and model.
+
+llm:
+  profile: default
+  fallback_profile: default
+
+llm_profiles:
+  default:
+    # Choose openai_compatible or anthropic_compatible.
+    provider: openai_compatible
+    # Use openai_responses or anthropic_messages as appropriate.
+    api_style: openai_responses
+    model: your-model
+    base_url: https://your-provider.example.com/v1
+    api_key_env: OWNPI_API_KEY
+    # Omit this field when the selected model does not support it.
+    reasoning_effort: medium
+    stream_responses: true
+    # Hosted search is enabled by default when supported.
+    supports_hosted_web_search: true
+
+runtime:
+  # Research Level is the only workflow exposed in the Beta release.
+  default_profile: research
+  subagent_enabled: true
+  subagent_max_count: 8
+  # Beta runs unattended; use an isolated workspace.
+  permissions:
+    preset: full_access
+  review_profile: auto
+  workspace_dir: ./workspace
+  output_dir: ./outputs

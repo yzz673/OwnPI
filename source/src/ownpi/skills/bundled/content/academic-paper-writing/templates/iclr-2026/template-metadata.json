@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "template_id": "iclr-2026-conference",
+  "display_name": "ICLR 2026 Conference LaTeX Template",
+  "version": "2026",
+  "profile": "conference",
+  "source": "https://github.com/ICLR/Master-Template/raw/master/iclr2026.zip",
+  "source_archive_sha256": "b6d63b29992e153f804bb6d170c57db156c011b5bedf96a9f31d58813b909acf",
+  "source_provenance": "Official template linked from the ICLR 2026 Author Guide; matches the previously bundled ICLR 2026 asset set.",
+  "license": "Mixed template distribution: LPPL-licensed bundled LaTeX dependencies with official ICLR template files; retain embedded notices.",
+  "license_review": "The official ICLR template repository does not expose a repository-level license file. Bundled LaTeX dependencies carry embedded LPPL notices, and ICLR publicly distributes the package for submission authoring.",
+  "entry_point": "iclr2026_conference.tex",
+  "bibliography_path": "iclr2026_conference.bib",
+  "compile_engine": "pdflatex",
+  "default_template_used": true,
+  "authoritative_policy_source": false
+}

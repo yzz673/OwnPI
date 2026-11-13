@@ -1,5 +1,7 @@
 > **v0.1.0 Stable：** 首个正式版本替换此前的 Beta 安装包，并包含 CLI + TUI。当前能力及升级方式以[发布说明](docs/releases/v0.1.0.md)为准；下文仅限 Beta 的说明属于待更新的历史内容。
 
+克隆本仓库即获得 [`source/`](source/README.zh-CN.md) 中的 stable 源码；依赖准备和可选的源码运行方式见该目录 README。Release 只提供可安装产品，不再单独发布源码压缩包。该目录的许可范围以 [`source/LICENSE`](source/LICENSE) 和其中的第三方声明为准。
+
 <div align="center">
   <img src="docs/assets/readme/ownpi-lockup.png" alt="OwnPI：Your Own Principal Investigator" width="720">
   <p>

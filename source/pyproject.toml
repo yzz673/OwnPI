@@ -1,0 +1,113 @@
+[project]
+name = "ownpi"
+version = "0.1.0"
+description = "Independent two-agent neuro research framework"
+readme = "README.md"
+license = { file = "LICENSE" }
+requires-python = ">=3.11"
+dependencies = [
+  "pyyaml>=6.0.1",
+  "prompt_toolkit>=3.0.43",
+  "pypdf>=6.0.0",
+  "rich>=13.7.1",
+  "bashlex>=0.18",
+  "httpx[socks]>=0.28.1",
+  "websockets>=15.0.1",
+  "beautifulsoup4>=4.13.4",
+  "nbformat>=5.10.4",
+  "pillow>=11.2.1",
+  "mutagen>=1.47.0",
+  "zstandard>=0.23.0",
+  "gdown>=5.2.0",
+  "jsonschema>=4.23.0",
+  "packaging>=24.0",
+  "pybtex==0.26.1",
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=8.0.0",
+  "pyinstaller>=6.0.0",
+  "ruff>=0.14.0",
+]
+build = [
+  "pyinstaller>=6.0.0",
+]
+pdf = [
+  "pymupdf>=1.27.0",
+]
+webapp = [
+  "playwright>=1.55.0",
+]
+
+[project.scripts]
+ownpi = "ownpi.cli.main:main"
+ownpi-tui = "ownpi.tui_bridge.launcher:main"
+
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+exclude = ["ownpi.ui", "ownpi.ui.*"]
+
+[tool.setuptools.package-data]
+"ownpi.resources" = ["bin/ownpi-tui-bin"]
+"ownpi.resources.templates" = ["*.yaml", "*.example"]
+"ownpi.skills.bundled" = ["content/**/*"]
+"ownpi.static_semantic_contracts" = ["content/**/*.md", "content/**/*.pdf"]
+"ownpi.capability_dependencies" = ["data/*.yaml"]
+
+[tool.setuptools.exclude-package-data]
+"*" = ["*.pyc", "*.pyo", "__pycache__/*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+norecursedirs = ["temp", "plan", "outputs", "candidates", ".git", ".venv", ".hypothesis"]
+markers = [
+  "contract: orthogonal schema, API, or semantic contract coverage",
+  "no_llm: canonical deterministic Runtime wiring matrix and its contracts",
+  "journey: deterministic cross-domain Runtime journey",
+  "journey_long: opt-in long-horizon deterministic Runtime journey",
+  "trace_regression: minimized regression derived from a real Runtime trace",
+  "live_canary: bounded real-provider compatibility canary",
+  "domain_admission: admission domain",
+  "domain_capability_dependencies: capability dependency maintenance domain",
+  "domain_compaction: compaction domain",
+  "domain_developer_observability: offline developer trace analysis domain",
+  "domain_long_execution: long execution domain",
+  "domain_main_chain: cross-domain main-chain domain",
+  "domain_native_tool_loop: native tool loop domain",
+  "domain_output_delivery: output delivery domain",
+  "domain_plan_mode: Plan Mode domain",
+  "domain_product_cli: product and CLI domain",
+  "domain_provider_transport: provider transport domain",
+  "domain_record_resume: record and resume domain",
+  "domain_skills_memory: skills and memory domain",
+  "domain_stage_prep: Stage Prep domain",
+  "domain_stage_runtime: stage runtime domain",
+  "domain_test_system: test-system domain",
+  "domain_tool_system: tool system domain",
+  "layer_unit: isolated unit tests",
+  "layer_component: deterministic subsystem tests",
+  "layer_wiring: deterministic multi-component Runtime wiring tests",
+  "layer_integration: local process, CLI, or package integration tests",
+  "layer_e2e: deterministic public-entry end-to-end tests",
+  "layer_stress: high-volume and boundedness tests",
+  "layer_live: opt-in real provider, network, or remote tests",
+]
+
+[tool.ruff.lint.per-file-ignores]
+"src/ownpi/skills/bundled/content/webapp-testing/examples/console_logging.py" = ["F541"]
+"tests/**/*_support.py" = ["F401"]
+"tests/**/test_*_[0-9][0-9].py" = ["F403", "F405"]
+
+[dependency-groups]
+dev = [
+    "hypothesis>=6.165.10",
+    "pytest-cov>=7.1.0",
+]

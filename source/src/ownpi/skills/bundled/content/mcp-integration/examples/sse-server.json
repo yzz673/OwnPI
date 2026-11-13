@@ -1,0 +1,20 @@
+{
+  "runtime": {
+    "mcp_servers": [
+      {
+        "name": "hosted-service",
+        "transport": "sse",
+        "url": "https://mcp.example.com/sse",
+        "oauth": {"enabled": true},
+        "timeout_seconds": 20
+      },
+      {
+        "name": "custom-service",
+        "transport": "sse",
+        "url": "https://mcp.example.com/sse",
+        "headers_helper": "/absolute/path/to/headers-helper",
+        "timeout_seconds": 20
+      }
+    ]
+  }
+}

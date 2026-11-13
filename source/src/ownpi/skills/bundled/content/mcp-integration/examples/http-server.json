@@ -1,0 +1,17 @@
+{
+  "runtime": {
+    "mcp_servers": [
+      {
+        "name": "rest-api",
+        "transport": "http",
+        "url": "https://api.example.com/mcp",
+        "headers_helper": "/absolute/path/to/headers-helper",
+        "headers": {
+          "Content-Type": "application/json",
+          "X-API-Version": "2024-01-01"
+        },
+        "timeout_seconds": 20
+      }
+    ]
+  }
+}
